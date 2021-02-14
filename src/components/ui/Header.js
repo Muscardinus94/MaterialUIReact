@@ -68,15 +68,18 @@ const useStyles = makeStyles((theme) => ({
     minWidth: 10,
     marginLeft: "25px",
   },
-  button: {
+  estimate: {
     ...theme.typography.estimate,
     borderRadius: "50px",
     marginLeft: "50px",
     marginRight: "25px",
     height: "45px",
+    "&:hover": {
+      backgroundColor: theme.palette.secondary.light,
+    },
   },
   menu: {
-    backgroundColor: theme.palette.common.arcBlue,
+    backgroundColor: theme.palette.common.blue,
     color: "white",
     borderRadius: 0,
   },
@@ -98,7 +101,7 @@ const useStyles = makeStyles((theme) => ({
     width: "50px",
   },
   drawer: {
-    backgroundColor: theme.palette.common.arcBlue,
+    backgroundColor: theme.palette.common.blue,
   },
   drawerItem: {
     ...theme.typography.tab,
@@ -106,7 +109,7 @@ const useStyles = makeStyles((theme) => ({
     opacity: 0.7,
   },
   drawerItemEstimate: {
-    backgroundColor: theme.palette.common.arcOrange,
+    backgroundColor: theme.palette.common.orange,
   },
   drawerItemSelected: {
     "& .MuiListItemText-root": {
@@ -157,7 +160,7 @@ export default function Header(props) {
       selectedIndex: 1,
     },
     {
-      name: "Mobile App Development",
+      name: "iOS/Android App Devlopment",
       link: "/mobileapps",
       activeIndex: 1,
       selectedIndex: 2,
@@ -196,6 +199,9 @@ export default function Header(props) {
             }
           }
           break;
+        case "/estimate":
+          setValue(5);
+          break;
         default:
           break;
       }
@@ -224,11 +230,12 @@ export default function Header(props) {
         ))}
       </Tabs>
       <Button
-        className={classes.button}
+        className={classes.estimate}
         variant="contained"
         color="secondary"
         component={Link}
         to="/estimate"
+        onClick={() => setValue(5)}
       >
         Free Estimate
       </Button>
