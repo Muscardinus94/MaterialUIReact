@@ -474,7 +474,7 @@ export default function CustomSoftware(props) {
         </Grid>
       </Grid>
       <Grid item>
-        <CallToAction setValue={setValue} setSelectedIndex={setSelectedIndex} />
+        <CallToAction setValue={setValue} />
       </Grid>
     </Grid>
   );
