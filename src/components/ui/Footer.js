@@ -8,7 +8,7 @@ import instagram from "../../assets/instagram.svg";
 
 const useStyle = makeStyles((theme) => ({
   footer: {
-    backgroundColor: theme.palette.common.arcBlue,
+    backgroundColor: theme.palette.common.blue,
     width: "100%",
     zIndex: 1302,
     position: "relative",
@@ -111,7 +111,7 @@ export default function Footer(props) {
                 }}
                 className={classes.link}
               >
-                Mobile App Development
+                iOS/Android App Devlopment
               </Grid>
               <Grid
                 item
