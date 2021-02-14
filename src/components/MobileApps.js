@@ -160,6 +160,7 @@ export default function MobileApps(props) {
             <Typography
               variant="body1"
               align={matchesSM ? "center" : undefined}
+              paragraph
             >
               Our technology enables an innate interconnection between web and
               mobile applications, putting everything you need right in one
@@ -168,6 +169,7 @@ export default function MobileApps(props) {
             <Typography
               variant="body1"
               align={matchesSM ? "center" : undefined}
+              paragraph
             >
               This allows you to extend your reach, reinvent interactions, and
               develop a stronger relationship with your users than ever before.
@@ -175,7 +177,7 @@ export default function MobileApps(props) {
           </Grid>
         </Grid>
         <Grid item md>
-          <Lottie options={defaultOption} maxWidth="20em" />
+          <Lottie options={defaultOption} style={{ maxWidth: "20em" }} />
         </Grid>
         <Grid item container direction="column" md>
           <Grid item>
@@ -188,14 +190,26 @@ export default function MobileApps(props) {
             </Typography>
           </Grid>
           <Grid item>
-            <Typography variant="body1" align={matchesSM ? "center" : "right"}>
+            <Typography
+              variant="body1"
+              align={matchesSM ? "center" : "right"}
+              paragraph
+            >
               Our cutting-edge development process allows us to create apps for
               iPhone, Android, and tablets -
             </Typography>
-            <Typography variant="body1" align={matchesSM ? "center" : "right"}>
+            <Typography
+              variant="body1"
+              align={matchesSM ? "center" : "right"}
+              paragraph
+            >
               all at the same time.
             </Typography>
-            <Typography variant="body1" align={matchesSM ? "center" : "right"}>
+            <Typography
+              variant="body1"
+              align={matchesSM ? "center" : "right"}
+              paragraph
+            >
               This significantly reduces costs and creates a more unified brand
               experience across all devices.
             </Typography>
